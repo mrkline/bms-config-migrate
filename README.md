@@ -6,17 +6,10 @@ Have some crazy idea that a computer can surely figure out what changed between
 two text files? Me too!
 
 ```
-bms-config-migrate \
-> --old "/windows-data/Falcon BMS 4.35/User/Config/" \
-> --new "/windows-data/Falcon BMS 4.36/User/Config/"
-    Finished dev [optimized + debuginfo] target(s) in 0.01s
-     Running `target/debug/bms-config-migrate --old '/windows-data/Falcon BMS 4.35/User/Config/' --new '/windows-data/Falcon BMS 4.36/User/Config/'`
-[WARN] /windows-data/Falcon BMS 4.35/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_nHotasPinkyShiftMagnitude'
-[WARN] /windows-data/Falcon BMS 4.35/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_bHotasDgftSelfCancel'
-[WARN] /windows-data/Falcon BMS 4.35/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_b3DClickableCursorAnchored'
-[WARN] /windows-data/Falcon BMS 4.36/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_nHotasPinkyShiftMagnitude'
-[WARN] /windows-data/Falcon BMS 4.36/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_bHotasDgftSelfCancel'
-[WARN] /windows-data/Falcon BMS 4.36/User/Config/Falcon BMS.cfg: Duplicate entries for 'g_b3DClickableCursorAnchored'
+bms-config-migrate.exe \
+> --old "E:/Falcon BMS 4.35/User/Config/" \
+> --new "E:/Falcon BMS 4.36/User/Config/"
+...
 // Merged user config:
 set g_bAfterburnerDetentClick 1
 set g_bEnableGtraining 0
