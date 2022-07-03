@@ -42,7 +42,7 @@ fn parse_config(cfg: Vec<u8>, from: &Utf8Path) -> Result<Config> {
         }
         let tokens: Vec<_> = line.split_whitespace().collect();
         if tokens.len() != 3 || tokens[0] != "set" {
-            warn!("{from}: Odd line '{line}'");
+            warn!("{from}: Ignoring odd line '{line}'");
             return None;
         }
         Some((tokens[1], tokens[2]))
